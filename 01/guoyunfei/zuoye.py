@@ -7,14 +7,14 @@ import random
 print
 print
 print '###取出最大的两个数字###'
-orign = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,65556,45,33,45]
+orign = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,65555,45,33,45]
 max_number, second_number = 0, 0
 for num in orign:
     if num > second_number:
         if num > max_number:
             second_number = max_number
             max_number = num
-        else:
+        if num < max_number:
             second_number = num
 print 'orign: %s' % orign
 print 'max_number: %s' % max_number
