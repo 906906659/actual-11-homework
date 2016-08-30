@@ -19,6 +19,7 @@
     '''
 '''计算列表中最大的两个数字'''
 # num01 = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,65555,45,33,45]
+# num02 = num01[:]
 # for i in range(len(num01)-1,-1,-1):
 #     for j in range(i):
 #         if num01[j] > num01[j+1]:
@@ -31,7 +32,7 @@
 #     else:
 #         secondMax_num = num01[-1]
 #         break
-# print '最大数为：%s；第二大的数为：%s；' % (max_num,secondMax_num)
+# print '列表%s里\n最大数为：%s；第二大的数为：%s；' % (num02,max_num,secondMax_num)
 
 '''乘法口诀'''
 # for i in range(1, 10):
@@ -42,17 +43,19 @@
 '''随机数'''
 # import random
 # while True:
-#     random01 = random.randint(0, 3)
-#     num02 = int(raw_input('请输入你心中0-100的数字: '))
-#     if num02==random01:
-#         print '恭喜你猜对了，猜中的数字为：%s;' % (num02)
+#     randomNum=random.randint(1,100)
+#     num03=int(raw_input('请输入0-100之间的数字：'))
+#
+#     if num03>100:
+#         print '您输入的数字超过范围，请输入小于100的数字！'
+#         continue
+#     elif num03 < 0:
+#         print '您输入的数字超过范围，请输入大于0的数字！'
+#     elif num03==randomNum:
+#         print '恭喜您，猜对了！\n猜中的数字是：%s' % randomNum
 #         break
-#     if num02 >100:
-#         print '不在范围内，请输入0-100的数字！'
-#     elif num02<0:
-#         print '不在范围内，请输入大于0的数字！'
 #     else:
-#         print '你猜错了，数字是：%s ；请继续！！！' % (random01)
+#         print '很遗憾！您猜错了！\n您猜的数字是：%s\n答案是：%s' % (num03,randomNum)
 
 
 '''练习'''
