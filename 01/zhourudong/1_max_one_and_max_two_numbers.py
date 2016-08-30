@@ -26,6 +26,7 @@ print 'The max_num_one is:%s , max_num_two is:%s' % (max_num_one,max_num_two)
 
 list_2 = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,65555,45,33,45]
 i = list_2[0]
+d = list_2[0]
 for a in list_2:
     if a > i:
         i = a 
