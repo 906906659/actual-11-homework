@@ -7,3 +7,16 @@ for i in range(1,10):
 		if j <= i:
 			print "%s x %s = %s" % (i,j,i*j), 
 	print '\n'
+
+
+# while 循环
+i  = 1 
+
+while i<10:
+    j=1
+    while j<=i:
+        print "%s x %s = %s" % (i,j,i*j),
+        j += 1
+    i += 1
+    print '\n'
+    
