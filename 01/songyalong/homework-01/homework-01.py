@@ -33,12 +33,26 @@
 #         secondMax_num = num01[-1]
 #         break
 # print '列表%s里\n最大数为：%s；第二大的数为：%s；' % (num02,max_num,secondMax_num)
+'''第二种计算列表中最大的两个数字'''
+num01 = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,65555,45,33,45]
+print num01
+max_num = 0
+for i in num01:
+    if i >max_num:
+        max_num=i
+second_num=0
+for i in num01:
+    if max_num>i>second_num:
+        second_num=i
+print '列表num01中\n最大值为：%s;\n第二大的值为：%s;' % (max_num,second_num)
 
 '''乘法口诀'''
-# for i in range(1, 10):
+# for i in range(1,10):
 #     for j in range(1,i+1):
-#         sum01 = i * j
-#         print '%s X %s = %s' % (j,i,sum01)
+#         k = j * i
+#         print '%s X %s = %s' %(j,i,k),
+#     print '\n'
+
 
 '''随机数'''
 # import random
