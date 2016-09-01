@@ -22,3 +22,33 @@ for i in new_nums:
 
 print max_num, sec_num
 
+print "==========="
+
+max_num = 0
+
+for num in nums:
+    if num > max_num:
+        max_num = num
+
+for num in nums:
+    if num != max_num and num > sec_num:
+        sec_num = num
+
+print max_num, sec_num
+
+print "=========="
+
+max_num = sec_num = 0
+
+for num in nums:
+    if max_num < num:
+        sec_num = max_num
+        max_num = num
+    elif max_num == num:
+        continue
+    else:
+        if sec_num < num:
+            sec_num = num
+
+print max_num, sec_num
+        
